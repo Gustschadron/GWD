@@ -1,0 +1,21 @@
+{
+    "title":"Gust's Web Design – professionele websites voor iedereen!",
+    "description":"Professionele, snelle websites en onderhoud. Gust's Web Design, België.",
+    "heroTitle":"Een professionele website voor jouw start",
+    "heroText":"Wij bouwen en onderhouden snelle, verzorgde websites voor ondernemers.",
+    "cta":"Neem contact op",
+    "servicesTitle":"Diensten",
+    "services":
+    [
+        {
+            "title":"Websiteverkoop",
+            "text":"Een website op maat, klaar voor gebruik en zelf aanpasbaar via een eenvoudig beheerpaneel."
+        },
+        {
+            "title":"Onderhoud",
+            "text":"Wij houden je website up-to-date en online, zodat jij je op je bedrijf kan richten."
+        }
+    ],
+    "portfolioTitle":"Recent werk",
+    "portfolioIntro":"Een kleine selectie van websites die we voor andere klanten maakten."
+}

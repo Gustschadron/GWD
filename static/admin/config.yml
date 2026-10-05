@@ -1,0 +1,63 @@
+backend:
+  name: github
+  repo: JOUW-GITHUB-ACCOUNT/klant-repo   # aanpassen per klant
+  branch: main
+  base_url: https://JOUW-OAUTH-PROXY.workers.dev   # eigen OAuth-proxy, zie README
+publish_mode: editorial_workflow
+media_folder: static/images/uploads
+public_folder: /images/uploads
+collections:
+  - name: instellingen
+    label: Instellingen
+    files:
+      - name: company
+        label: Bedrijfsgegevens (voedt ook de juridische pagina's)
+        file: content/company.json
+        fields:
+          - {name: name, label: Bedrijfsnaam, widget: string}
+          - {name: legalForm, label: Rechtsvorm, widget: string}
+          - {name: kbo, label: Ondernemingsnummer, widget: string, required: false}
+          - {name: vat, label: BTW-nummer, widget: string, required: false}
+          - {name: address, label: Zetel, widget: string}
+          - {name: email, label: E-mail, widget: string}
+          - {name: phone, label: Telefoon, widget: string}
+          - {name: hours, label: Openingsuren, widget: string}
+          - {name: domain, label: Domein (https://...), widget: string}
+          - {name: privacyContact, label: Privacycontact, widget: string}
+          - {name: colorPrimary, label: Hoofdkleur, widget: color}
+          - {name: colorAccent, label: Accentkleur, widget: color}
+  - name: paginas
+    label: Pagina's
+    files:
+      - name: home
+        label: Home
+        file: content/home.json
+        fields:
+          - {name: title, label: SEO-titel, widget: string}
+          - {name: description, label: SEO-beschrijving, widget: text}
+          - {name: heroTitle, label: Kop, widget: string}
+          - {name: heroText, label: Intro, widget: text}
+          - {name: cta, label: Knoptekst, widget: string}
+          - {name: servicesTitle, label: Titel diensten, widget: string}
+          - name: services
+            label: Diensten
+            widget: list
+            fields: [{name: title, label: Titel, widget: string}, {name: text, label: Tekst, widget: text}]
+          - {name: portfolioTitle, label: Titel portfolio, widget: string}
+          - {name: portfolioIntro, label: Intro portfolio, widget: text}
+      - name: contact
+        label: Contact
+        file: content/contact.json
+        fields:
+          - {name: title, label: SEO-titel, widget: string}
+          - {name: description, label: SEO-beschrijving, widget: text}
+          - {name: heading, label: Kop, widget: string}
+          - {name: intro, label: Intro, widget: text}
+      - name: portfolio
+        label: Portfolio
+        file: content/portfolio.json
+        fields:
+          - name: items
+            label: Websites
+            widget: list
+            fields: [{name: name, label: Naam, widget: string}, {name: url, label: Link, widget: string}, {name: image, label: Foto, widget: image}]
