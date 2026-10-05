@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: JOUW-GITHUB-ACCOUNT/klant-repo   # aanpassen per klant
+  repo: gustschadron/GWD   # aanpassen per klant
   branch: main
   base_url: https://JOUW-OAUTH-PROXY.workers.dev   # eigen OAuth-proxy, zie README
 publish_mode: editorial_workflow
