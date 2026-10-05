@@ -2,7 +2,7 @@ backend:
   name: github
   repo: gustschadron/GWD   # aanpassen per klant
   branch: main
-  base_url: https://JOUW-OAUTH-PROXY.workers.dev   # eigen OAuth-proxy, zie README
+  base_url: https://sveltia-cms-auth.gustscd.workers.dev   # eigen OAuth-proxy, zie README
 publish_mode: editorial_workflow
 media_folder: static/images/uploads
 public_folder: /images/uploads
